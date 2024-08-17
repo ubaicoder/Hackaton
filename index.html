@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 sidebar">
+                <div class="logo mb-4">LOGO</div>
+                <ul class="sidebar-menu list-unstyled">
+                    <li class="menu-item active">
+                        <input type="radio" name="menu" id="schedule" checked>
+                        <label for="schedule">Schedule</label>
+                    </li>
+                    <li class="menu-item">
+                        <input type="radio" name="menu" id="attendance">
+                        <label for="attendance">Attendance</label>
+                    </li>
+                    <li class="menu-item">
+                        <input type="radio" name="menu" id="results">
+                        <label for="results">Results</label>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <div class="settings mb-3">
+                        <i class="fas fa-cogs"></i> Settings
+                    </div>
+                    <div class="logout">
+                        <i class="fas fa-sign-out-alt"></i> Log Out
+                    </div>
+                </div>
+            </nav>
+            <main class="col-md-9 col-lg-10 content">
+                <header class="header mb-4">
+                    <div class="hello">Hello <span class="user">&lt;USER&gt;</span></div>
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i> Notifications
+                    </div>
+                    <div class="faculty-name">
+                        <span>FACULTY NAME</span>
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </header>
+                <div class="schedule-table">
+                    <div class="table-header">
+                        <div class="row">
+                            <div class="col time-week-day">Time/Week Day</div>
+                            <div class="col day">Monday</div>
+                            <div class="col day">Tuesday</div>
+                            <div class="col day">Wednesday</div>
+                            <div class="col day">Thursday</div>
+                            <div class="col day">Friday</div>
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="row">
+                            <div class="col time">10:15 - 11:15</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col time">11:15 - 12:15</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="break">
+                            <div class="row">
+                                <div class="col text-center py-3 font-weight-bold">BREAK</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col time">01:00 - 2:00</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col time">02:00 - 03:00</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col time">03:00 - 04:00</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col time">04:00 - 05:00</div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- FontAwesome for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

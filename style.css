@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar-menu {
+    margin-bottom: auto;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-item input[type="radio"] {
+    display: none;
+}
+
+.menu-item label {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item label:hover {
+    background-color: #f2f2f2;
+}
+
+.menu-item.active label {
+    background-color: #e0e0e0;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+}
+
+.settings,
+.logout {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.settings i,
+.logout i {
+    margin-right: 10px;
+}
+
+.content {
+    padding: 30px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+}
+
+.notifications i {
+    margin-right: 5px;
+}
+
+.faculty-name {
+    display: flex;
+    align-items: center;
+}
+
+.faculty-name span {
+    margin-right: 10px;
+}
+
+.schedule-table {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-header {
+    background-color: #f9f9f9;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-header .col {
+    flex-basis: 16.66%;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.table-body {
+    padding: 10px;
+}
+
+.table-body .row {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-body .col {
+    flex-basis: 16.66%;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.break {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.break .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.break .col {
+    flex-basis: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .content {
+        padding: 15px;
+    }
